@@ -23,5 +23,5 @@ protected:
 	virtual void Execute(struct FMassEntityManager& EntityManager, struct FMassExecutionContext& Context) override;
 
 private:
-	FMassEntityQuery EntityQuery;
+	struct FMassEntityQuery EntityQuery;
 };
