@@ -13,14 +13,14 @@
 UCLASS()
 class GTABASE_API USimpleRandomMovementProcessor : public UMassProcessor
 {
-	GENERATED_BODY()
+	GENERATED_UCLASS_BODY()
 	
 public:
 	USimpleRandomMovementProcessor();
 
 protected:
 	virtual void ConfigureQueries() override;
-	virtual void Execute(class UMassEntitySubsystem& EntitySubsystem, FMassExecutionContext& Context) override;
+	virtual void Execute(struct FMassEntityManager& EntityManager, struct FMassExecutionContext& Context) override;
 
 private:
 	FMassEntityQuery EntityQuery;

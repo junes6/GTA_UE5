@@ -6,6 +6,7 @@
 #include "MassEntitySubsystem.h"
 #include "MassEntityQuery.h"
 #include "MassCommonFragments.h"
+#include "MassEntityTemplateRegistry.h"
 
 USimpleRandomMovementProcessor::USimpleRandomMovementProcessor()
 {
@@ -20,9 +21,9 @@ void USimpleRandomMovementProcessor::ConfigureQueries()
 	EntityQuery.AddRequirement<FSimpleMovementFragment>(EMassFragmentAccess::ReadWrite);
 }
 
-void USimpleRandomMovementProcessor::Execute(UMassEntitySubsystem& EntitySubsystem, FMassExecutionContext& Context)
+void USimpleRandomMovementProcessor::Execute(struct FMassEntityManager& EntityManager, struct FMassExecutionContext& Context)
 {
-	EntityQuery.ForEachEntityChunk(EntitySubsystem, Context, ([this](FMassExecutionContext& Context)
+	EntityQuery.ForEachEntityChunk(EntityManager, Context, ([this](FMassExecutionContext& Context)
 		{
 			const TArrayView<FTransformFragment> TransformsList = Context.GetMutableFragmentView<FTransformFragment>();
 			const TArrayView<FSimpleMovementFragment> SimpleMovementsList = Context.GetMutableFragmentView<FSimpleMovementFragment>();

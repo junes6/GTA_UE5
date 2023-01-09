@@ -14,12 +14,10 @@
 UCLASS()
 class GTABASE_API USimpleRandomMovementTrait : public UMassEntityTraitBase
 {
-	GENERATED_BODY()
+	GENERATED_UCLASS_BODY()
 
 public:
-	virtual void BuildTemplate(FMassEntityTemplateBuildContext& BuildContext, UWorld& World) const override;
-
-	
+	virtual void BuildTemplate(struct FMassEntityTemplateBuildContext& BuildContext, const class UWorld& World) const override;
 };
 
 USTRUCT()

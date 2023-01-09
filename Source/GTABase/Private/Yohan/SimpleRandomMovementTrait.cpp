@@ -2,8 +2,9 @@
 
 
 #include "Yohan/SimpleRandomMovementTrait.h"
+#include "MassEntityTemplateRegistry.h"
 
-void USimpleRandomMovementTrait::BuildTemplate(FMassEntityTemplateBuildContext& BuildContext, UWorld& World) const
-{
+void USimpleRandomMovementTrait::BuildTemplate(struct FMassEntityTemplateBuildContext& BuildContext, const class UWorld& World) const {
+	
 	BuildContext.AddFragment<FSimpleMovementFragment>();
 }
