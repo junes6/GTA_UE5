@@ -14,7 +14,7 @@
 UCLASS()
 class GTABASE_API USimpleRandomMovementTrait : public UMassEntityTraitBase
 {
-	GENERATED_UCLASS_BODY()
+	GENERATED_BODY()
 
 public:
 	virtual void BuildTemplate(struct FMassEntityTemplateBuildContext& BuildContext, const class UWorld& World) const override;

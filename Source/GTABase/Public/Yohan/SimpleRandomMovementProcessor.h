@@ -13,7 +13,7 @@
 UCLASS()
 class GTABASE_API USimpleRandomMovementProcessor : public UMassProcessor
 {
-	GENERATED_UCLASS_BODY()
+	GENERATED_BODY()
 	
 public:
 	USimpleRandomMovementProcessor();
