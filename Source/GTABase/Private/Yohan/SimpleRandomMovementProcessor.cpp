@@ -19,10 +19,13 @@ void USimpleRandomMovementProcessor::ConfigureQueries()
 {
 	EntityQuery.AddRequirement<FTransformFragment>(EMassFragmentAccess::ReadWrite);
 	EntityQuery.AddRequirement<FSimpleMovementFragment>(EMassFragmentAccess::ReadWrite);
+
+	EntityQuery.RegisterWithProcessor(*this);
 }
 
 void USimpleRandomMovementProcessor::Execute(struct FMassEntityManager& EntityManager, struct FMassExecutionContext& Context)
 {
+	// Context.SetExecutionType(EMassExecutionContextType::Processor);
 	EntityQuery.ForEachEntityChunk(EntityManager, Context, ([this](FMassExecutionContext& Context)
 		{
 			const TArrayView<FTransformFragment> TransformsList = Context.GetMutableFragmentView<FTransformFragment>();
