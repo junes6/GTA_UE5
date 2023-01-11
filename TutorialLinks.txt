@@ -15,3 +15,12 @@ https://www.youtube.com/playlist?list=PLKNsvWABWRceGFLyCWBz33f1aw4WjyYGs
 
 -Unreal Engine 5 Tutorial - How to Create Dynamic AI Part 1
 https://www.youtube.com/watch?v=oFm6EhX3QeI
+
+주사율
+더블버퍼링
+
+-foreach
+https://modoocode.com/260
+
+-lambda
+https://modoocode.com/196
