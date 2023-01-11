@@ -16,6 +16,9 @@ https://www.youtube.com/playlist?list=PLKNsvWABWRceGFLyCWBz33f1aw4WjyYGs
 -Unreal Engine 5 Tutorial - How to Create Dynamic AI Part 1
 https://www.youtube.com/watch?v=oFm6EhX3QeI
 
+[UE5 - C++] Artificial Intelligence in C++ in Unreal Engine 5 - Find Random Location
+https://www.youtube.com/watch?v=bGd95Q__ov0&t=943s
+
 주사율
 더블버퍼링
 
