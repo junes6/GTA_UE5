@@ -6,3 +6,12 @@ https://dev.epicgames.com/community/learning/tutorials/p0R8/unreal-engine-hand-t
 
 -MassSample
 https://github.com/Megafunk/MassSample
+
+-Grand Theft Auto Unreal Engine Tutorial
+https://www.youtube.com/playlist?list=PLD-wRUWKiFd4NSi7FdGZmwsuncnHIIQ00
+
+-UE5 MassAI Crowd in your project step by step guide's
+https://www.youtube.com/playlist?list=PLKNsvWABWRceGFLyCWBz33f1aw4WjyYGs
+
+-Unreal Engine 5 Tutorial - How to Create Dynamic AI Part 1
+https://www.youtube.com/watch?v=oFm6EhX3QeI

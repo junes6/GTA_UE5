@@ -18,7 +18,9 @@ USimpleRandomMovementProcessor::USimpleRandomMovementProcessor()
 void USimpleRandomMovementProcessor::ConfigureQueries()
 {
 	EntityQuery.AddRequirement<FTransformFragment>(EMassFragmentAccess::ReadWrite);
+	// EntityQuery.AddRequirement<FTransformFragment>(EMassFragmentAccess::ReadWrite, EMassFragmentPresence::Any);
 	EntityQuery.AddRequirement<FSimpleMovementFragment>(EMassFragmentAccess::ReadWrite);
+	// EntityQuery.AddRequirement<FSimpleMovementFragment>(EMassFragmentAccess::ReadWrite, EMassFragmentPresence::Any);
 
 	EntityQuery.RegisterWithProcessor(*this);
 }
@@ -31,6 +33,8 @@ void USimpleRandomMovementProcessor::Execute(struct FMassEntityManager& EntityMa
 			const TArrayView<FTransformFragment> TransformsList = Context.GetMutableFragmentView<FTransformFragment>();
 			const TArrayView<FSimpleMovementFragment> SimpleMovementsList = Context.GetMutableFragmentView<FSimpleMovementFragment>();
 			const float WorldDeltaTime = Context.GetDeltaTimeSeconds();
+
+			int32 NumEntities = Context.GetNumEntities();
 
 			for (int32 EntityIndex = 0; EntityIndex < Context.GetNumEntities(); ++EntityIndex)
 			{
