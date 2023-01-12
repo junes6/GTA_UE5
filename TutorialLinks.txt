@@ -19,6 +19,12 @@ https://www.youtube.com/watch?v=oFm6EhX3QeI
 [UE5 - C++] Artificial Intelligence in C++ in Unreal Engine 5 - Find Random Location
 https://www.youtube.com/watch?v=bGd95Q__ov0&t=943s
 
+How To Create a Combat System in Unreal Engine 5
+https://www.youtube.com/watch?v=eH2ONHElTGA&t=159s
+
+Unreal Engine 5 Tutorial - AI Part 1: Character Setup
+https://www.youtube.com/watch?v=IDZh0epFTRY
+
 주사율
 더블버퍼링
 

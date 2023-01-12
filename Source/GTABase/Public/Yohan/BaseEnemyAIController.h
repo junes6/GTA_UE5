@@ -13,5 +13,21 @@ UCLASS()
 class GTABASE_API ABaseEnemyAIController : public AAIController
 {
 	GENERATED_BODY()
+
+public:
+	ABaseEnemyAIController();
+
+protected:
+	virtual void BeginPlay() override;
+	virtual void OnPossess(APawn* InPawn) override;
 	
+private:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "AI", meta = (AllowPrivateAccess = true))
+	TObjectPtr<class UBehaviorTree> BehaviorTree;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI", meta = (AllowPrivateAccess = true))
+	TObjectPtr<class UBehaviorTreeComponent> BehaviorTreeComponent;
+
+	UPROPERTY(VisibleAnywhere, BLueprintReadOnly, Category = "AI", meta = (AllowPrivateAccess = true))
+	TObjectPtr<class UBlackboardComponent> BlackboardComponent;
 };
