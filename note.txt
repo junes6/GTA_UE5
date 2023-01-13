@@ -1,0 +1,3 @@
+Behavior Tree the asset is the data, so the rules you create that controls how AI characters behave. It’s like an AI program.
+Behavior Tree Component is the actual running component that you attach to an AI character, which then points to a Behavior Tree asset that controls a character. It’s your AI’s CPU that actually executes the program (above).
+Blackboard is the same, but it’s a data store that the Behavior Tree uses to remember what other actors and locations the actor is behaving using/towards. It’s your AI’s memory so it knows where to go, who to shoot, etc.

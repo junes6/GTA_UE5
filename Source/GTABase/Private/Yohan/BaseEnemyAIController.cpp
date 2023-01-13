@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+ï»¿// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "Yohan/BaseEnemyAIController.h"
@@ -8,13 +8,13 @@
 
 ABaseEnemyAIController::ABaseEnemyAIController()
 {
-	// BehaviorTree Component »ı¼º
+	// BehaviorTree Component ìƒì„±
 	BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>(TEXT("Behavior Tree Component"));
 
-	// Blackboard Component »ı¼º
+	// Blackboard Component ìƒì„±
 	BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>(TEXT("Blackboard Component"));
 
-	// Behavior Tree ÇÒ´ç(?)
+	// Behavior Tree í• ë‹¹(?)
 	ConstructorHelpers::FObjectFinder<UBehaviorTree> BTEnemy(TEXT("/Script/AIModule.BehaviorTree'/Game/Yohan/AI/Enemy/BT_BaseEnemy.BT_BaseEnemy'"));
 	// this->RunBehaviorTree(BTEnemy.Object);
 
